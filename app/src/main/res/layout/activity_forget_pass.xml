@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.ForgetPassActivity">
+
+    <ImageView
+        android:id="@+id/img1"
+        android:layout_width="233dp"
+        android:layout_height="254dp"
+        android:layout_marginLeft="80dp"
+        android:padding="30dp"
+        android:src="@drawable/pro" />
+    <EditText
+        android:id="@+id/edtmobile"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter mobile number"
+        android:layout_marginLeft="60dp"
+        android:layout_marginRight="60dp"
+        android:layout_marginTop="20dp"
+        android:textStyle="bold"
+        android:layout_below="@+id/img1"
+        android:textSize="14sp"/>
+    <EditText
+        android:id="@+id/mail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter Mail Id"
+        android:layout_marginLeft="60dp"
+        android:layout_marginRight="60dp"
+        android:layout_marginTop="20dp"
+        android:textStyle="bold"
+        android:layout_below="@+id/edtmobile"
+        android:textSize="14sp"/>
+    <Button
+        android:id="@+id/btnLoginn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/mail"
+        android:layout_marginStart="20dp"
+        android:layout_marginLeft="70dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginRight="70dp"
+        android:layout_marginBottom="20dp"
+        android:background="@color/mycolor"
+        android:gravity="center"
+        android:text="Submit"
+
+        android:textSize="16sp"
+        android:textColor="@android:color/black" />
+
+</RelativeLayout>

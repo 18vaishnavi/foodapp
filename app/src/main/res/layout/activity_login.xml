@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.LoginActivity">
+
+    <ImageView
+        android:id="@+id/imgprofile"
+        android:layout_width="136dp"
+        android:layout_height="216dp"
+        android:layout_marginLeft="120dp"
+        android:paddingLeft="30dp"
+        android:src="@drawable/pro" />
+
+    <EditText
+        android:id="@+id/edtid"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imgprofile"
+        android:layout_margin="30dp"
+        android:textSize="14sp"
+        android:hint="Mobile number"/>
+
+    <EditText
+        android:id="@+id/edtpswd"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/edtid"
+        android:textSize="14sp"
+        android:layout_margin="30dp"
+        android:hint="password"/>
+
+    <Button
+        android:id="@+id/btnlogin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/edtpswd"
+        android:layout_marginStart="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="20dp"
+        android:background="@color/mycolor"
+        android:gravity="center"
+        android:text="Log In"
+        android:textSize="16sp"
+        android:textColor="#ffffff" />
+
+    <TextView
+        android:id="@+id/txtforgetpswd"
+        android:layout_width="280dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btnlogin"
+        android:layout_marginLeft="140dp"
+        android:layout_marginTop="5dp"
+        android:padding="5dp"
+        android:text="Forget password?"
+        android:textColor="#f75f0c"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+    <TextView
+        android:id="@+id/register"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Don't have an account? Sign up now"
+        android:textColor="#f75f0c"
+        android:layout_below="@+id/btnlogin"
+        android:layout_marginLeft="80dp"
+        android:layout_marginRight="70dp"
+        android:layout_marginTop="180dp"
+        android:textStyle="bold"
+        android:textSize="16sp"/>
+
+
+
+</RelativeLayout>
