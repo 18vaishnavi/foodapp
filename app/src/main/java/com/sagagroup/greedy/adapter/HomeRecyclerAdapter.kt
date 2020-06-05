@@ -33,19 +33,18 @@ class HomeRecyclerAdapter(val context: Context, val itemList:ArrayList<Restouren
 
         override fun onBindViewHolder(holder: HomeViewHolder, position: Int) {
         val Restourent = itemList[position]
-        holder.txtrestorentname.text = Restourent.restorentname
-        holder.txtrestorentnameauthor.text = Restourent.restorentowner
-        holder.txtfoodPrice.text = Restourent.foodprise
-        holder.txtFoodRating.text = Restourent.foodprise
-        holder.imgFoodImage.setImageResource(Restourent.restorentimage)
+        holder.txtname.text = Restourent.name
+        holder.txtrestorentid.text = Restourent.id
+        holder.txtfoodPrice.text = Restourent.cost_for_one
+        holder.txtFoodRating.text = Restourent.rating
+       // holder.imgFoodImage.setImageResource(Restourent.image_url)
 
         }
         class HomeViewHolder(view: View) : RecyclerView.ViewHolder(view) {
-            val txtrestorentname: TextView = view.findViewById(R.id.txtrestorentname)
-            val txtrestorentnameauthor :TextView = view.findViewById(R.id.txtrestorentnameauthor)
+            val txtname: TextView = view.findViewById(R.id.txtname)
+            val txtrestorentid :TextView = view.findViewById(R.id.txtrestorentnameauthor)
             val txtfoodPrice :TextView = view.findViewById(R.id.txtfoodPrice)
             val txtFoodRating:TextView = view.findViewById(R.id.txtFoodRating)
-            val imgFoodImage:ImageView = view.findViewById(R.id.imgFoodImage)
+          //  val imgFoodImage:ImageView = view.findViewById(R.id.imgFoodImage)
 
-        }
-    }
+        }}

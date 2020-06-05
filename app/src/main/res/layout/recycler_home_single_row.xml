@@ -29,7 +29,7 @@
         android:layout_width="0dp"
         android:layout_height="match_parent">
         <TextView
-            android:id="@+id/txtrestorentname"
+            android:id="@+id/txtname"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="mandle ji ka dhaba"
@@ -41,7 +41,7 @@
             android:id="@+id/txtrestorentnameauthor"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_below="@id/txtrestorentname"
+            android:layout_below="@id/txtname"
             android:text="mandle "
             android:padding="8dp"
             android:textSize="15sp"/>

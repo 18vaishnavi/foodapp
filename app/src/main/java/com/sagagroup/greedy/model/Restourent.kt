@@ -1,8 +1,8 @@
 package com.sagagroup.greedy.model
 
  data class Restourent (
-  val restorentname:String,
-  val restorentowner: String,
-  val foodprise:String,
-  val restorentrating:String,
-  val restorentimage: Int)
+  val id: String,
+  val name:String,
+  val rating: String,
+  val cost_for_one:String,
+  val image_url: String)
